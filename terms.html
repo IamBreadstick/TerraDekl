@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TerraDekl | Custom Lid Order</title>
+    <title>TerraDekl | Terms and Conditions of Sale</title>
     <meta
       name="description"
-      content="Submit a custom terrarium lid request to TerraDekl with all required order details."
+      content="Read TerraDekl's terms and conditions of sale for custom terrarium lid orders."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="order-page" data-page="order">
+  <body class="order-page" data-page="terms">
     <div class="order-shell">
       <header class="order-header">
         <a class="brand" href="index.html" aria-label="Back to TerraDekl home">
@@ -169,110 +169,67 @@
 
       <main class="order-layout">
         <section class="order-guide">
-          <p class="eyebrow">Custom Orders</p>
+          <p class="eyebrow">Legal</p>
+          <h1>Terms and Conditions of Sale</h1>
           <p>
-            Complete the form with the details below. The more exact your
-            measurements are, the faster we can quote and produce your lid.
+            These terms apply to custom terrarium lid orders placed with
+            TerraDekl.
           </p>
 
-          <h2>Required Information</h2>
-          <ul>
-            <li>Full name and email for follow-up</li>
-            <li>Terrarium top opening dimensions in cm</li>
-            <li>Quantity needed</li>
-            <li>Optional reference photos in image format only</li>
-          </ul>
-
-          <p class="order-note">
-            Send drawings or photos after submission to
-            <a href="mailto:orders@terradekl.com">orders@terradekl.com</a>
-            with your full name in the subject line.
+          <h2>1. Orders</h2>
+          <p>
+            Every order is custom-made based on the dimensions and reference
+            materials submitted by the customer. Customers are responsible for
+            making sure all measurements and details are accurate before
+            production begins.
           </p>
 
-          <p class="order-note">
-            <strong
-              >Pricing is confirmed after we review your submitted dimensions
-              and reference images.</strong
-            >
-            Once we have checked the details, we will follow up with the final
-            quote.
+          <h2>2. Pricing</h2>
+          <p>
+            Pricing is determined only after we review the submitted dimensions,
+            specifications, and any reference images. A final quote will be
+            provided after review.
+          </p>
+
+          <h2>3. Production</h2>
+          <p>
+            Production starts only after the quote has been accepted. Lead times
+            may vary depending on complexity, materials, and current order
+            volume.
+          </p>
+
+          <h2>4. Changes and Cancellations</h2>
+          <p>
+            Because each item is made to order, changes or cancellations may not
+            be possible once production has started.
+          </p>
+
+          <h2>5. Returns and Issues</h2>
+          <p>
+            Custom products are generally non-returnable unless they arrive
+            damaged or do not match the agreed order specifications.
+          </p>
+
+          <h2>6. Contact</h2>
+          <p>
+            For any questions about these terms or an existing order, contact
+            <a href="mailto:hello@terradekl.com">hello@terradekl.com</a>.
           </p>
         </section>
 
-        <section class="order-form-panel" aria-label="Custom lid request form">
-          <form
-            class="order-form"
-            action="mailto:orders@terradekl.com"
-            method="post"
-            enctype="text/plain"
-          >
-            <label>
-              Full Name
-              <input type="text" name="full-name" required />
-            </label>
-
-            <label>
-              Email
-              <input type="email" name="email" required />
-            </label>
-
-            <label>
-              Dimensions
-              <textarea
-                name="dimensions"
-                rows="4"
-                placeholder="Example: 45 cm x 30 cm. Add any extra dimension notes here."
-                required
-              ></textarea>
-            </label>
-
-            <label>
-              Reference Images
-              <input
-                type="file"
-                name="reference-images"
-                accept="image/png,image/jpeg,image/webp,image/gif,image/bmp,image/tiff,image/heic,image/heif"
-                multiple
-              />
-              <span class="field-hint"
-                >Images only. SVG, documents, and other file types are not
-                allowed.</span
-              >
-            </label>
-
-            <label>
-              Quantity
-              <div class="quantity-stepper">
-                <button
-                  class="quantity-button"
-                  type="button"
-                  data-step="decrement"
-                  aria-label="Decrease quantity"
-                >
-                  -
-                </button>
-                <input
-                  class="quantity-input"
-                  type="number"
-                  name="quantity"
-                  min="1"
-                  value="1"
-                  inputmode="numeric"
-                  required
-                />
-                <button
-                  class="quantity-button"
-                  type="button"
-                  data-step="increment"
-                  aria-label="Increase quantity"
-                >
-                  +
-                </button>
-              </div>
-            </label>
-
-            <button class="button" type="submit">Send Order Request</button>
-          </form>
+        <section class="order-form-panel" aria-label="Terms summary">
+          <p class="eyebrow">Important</p>
+          <p>
+            By placing an order, you confirm that the submitted measurements and
+            files are accurate to the best of your knowledge.
+          </p>
+          <p class="order-note">
+            <strong>Final pricing is confirmed only after review.</strong>
+          </p>
+          <p class="order-note">
+            If anything in the request is unclear, TerraDekl may contact you for
+            clarification before issuing a quote or starting production.
+          </p>
         </section>
       </main>
     </div>

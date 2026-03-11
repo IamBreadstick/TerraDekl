@@ -11,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body data-page="home">
     <div class="bg-fern" aria-hidden="true">
       <svg
         viewBox="0 0 64 64"
@@ -449,73 +449,88 @@
             </p>
           </section>
         </section>
+      </main>
 
-        <section class="page-section" id="contact" aria-label="Contact section">
-          <section class="contact-banner">
-            <div>
-              <p class="eyebrow">Contact</p>
-              <h2>Ready to turn this into a full storefront?</h2>
-            </div>
-            <a class="button" href="mailto:hello@terradekl.com"
-              >hello@terradekl.com</a
-            >
-          </section>
+      <section
+        class="footer-shell page-section"
+        aria-label="Contact and legal essentials section"
+      >
+        <section
+          id="contact"
+          class="contact-banner"
+          aria-label="Contact section"
+        >
+          <div>
+            <p class="eyebrow">Contact</p>
+          </div>
         </section>
 
         <section
-          class="page-section"
           id="legal"
+          class="legal-section"
           aria-label="Legal essentials section"
         >
-          <section class="legal-section">
-            <div class="legal-grid">
-              <div class="legal-column legal-column-contact">
-                <p class="eyebrow">Need Help?</p>
-                <p class="legal-intro">
-                  Questions about products or your order? Contact us and we will
-                  help you choose the right custom terrarium lid setup.
-                </p>
-                <ul class="legal-contact-list">
-                  <li>Email: hello@terradekl.com</li>
-                  <li>Phone: +386 (0)40 000 000</li>
-                  <li>Mon-Fri: 09:00 - 16:00</li>
-                </ul>
-              </div>
+          <div class="legal-grid">
+            <div class="legal-column legal-column-contact">
+              <p class="eyebrow">Need Help?</p>
+              <p class="legal-intro">
+                Questions about products or your order? Contact us and we will
+                help you choose the right custom terrarium lid setup.
+              </p>
+              <ul class="legal-contact-list">
+                <li>Email: hello@terradekl.com</li>
+                <li>Phone: +386 (0)40 000 000</li>
+                <li>Mon-Fri: 09:00 - 16:00</li>
+              </ul>
+            </div>
 
-              <div class="legal-column">
-                <p class="legal-heading">Legal</p>
-                <ul class="legal-link-list">
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms and Conditions of Sale</a></li>
-                </ul>
-              </div>
+            <div class="legal-column">
+              <p class="legal-heading">Legal</p>
+              <ul class="legal-link-list">
+                <li>
+                  <a href="privacy.html" data-i18n-link="privacy"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="terms.html" data-i18n-link="terms"
+                    >Terms and Conditions of Sale</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-              <div class="legal-column">
-                <p class="legal-heading">Store Policies</p>
-                <ul class="legal-link-list">
-                  <li><a href="#">Returns and Refund Policy</a></li>
-                  <li><a href="#">Shipping and Delivery Policy</a></li>
-                </ul>
-              </div>
+            <div class="legal-column">
+              <p class="legal-heading">Store Policies</p>
+              <ul class="legal-link-list">
+                <li>
+                  <a href="#" data-i18n-link="returns"
+                    >Returns and Refund Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-i18n-link="shipping"
+                    >Shipping and Delivery Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-              <div class="legal-column legal-column-payments">
-                <p class="legal-heading">Payment & Shipping</p>
-                <div class="legal-badges" aria-label="Accepted payment methods">
-                  <span>VISA</span>
-                  <span>Mastercard</span>
-                  <span>PayPal</span>
-                </div>
+            <div class="legal-column legal-column-payments">
+              <p class="legal-heading">Payment & Shipping</p>
+              <div class="legal-badges" aria-label="Accepted payment methods">
+                <span>VISA</span>
+                <span>Mastercard</span>
+                <span>PayPal</span>
               </div>
             </div>
-          </section>
+          </div>
         </section>
-      </main>
 
-      <footer class="site-footer">
-        <p>TerraDekl</p>
-        <p>Product showcase template for modern retail brands.</p>
-        <p>&copy; <span id="year"></span> TerraDekl</p>
-      </footer>
+        <footer class="site-footer">
+          <p>&copy; <span id="year"></span> TerraDekl</p>
+        </footer>
+      </section>
     </div>
 
     <script src="script.js"></script>
