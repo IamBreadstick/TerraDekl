@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TerraDekl | Custom Lid Order</title>
+    <meta
+      name="description"
+      content="Submit a custom terrarium lid request to TerraDekl with all required order details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="order-page">
+    <div class="order-shell">
+      <header class="order-header">
+        <a class="brand" href="index.html" aria-label="Back to TerraDekl home">
+          <span class="brand-mark" aria-hidden="true">TD</span>
+          <span class="brand-name">TerraDekl</span>
+        </a>
+        <a class="button button-secondary" href="index.html">Back to Site</a>
+      </header>
+
+      <main class="order-layout">
+        <section class="order-guide">
+          <p class="eyebrow">Custom Orders</p>
+          <h1>Tell us what we need to build your terrarium lid.</h1>
+          <p>
+            Complete the form with the details below. The more exact your
+            measurements are, the faster we can quote and produce your lid.
+          </p>
+
+          <h2>Required Information</h2>
+          <ul>
+            <li>Inside opening dimensions: width x depth in mm or inches</li>
+            <li>Lid type: full lid, split lid, or sliding lid</li>
+            <li>Material preference: mesh, acrylic, glass, or mixed build</li>
+            <li>Ventilation and cable cutout locations</li>
+            <li>Quantity needed and preferred delivery date</li>
+            <li>Any photos or sketches of your terrarium frame</li>
+          </ul>
+
+          <p class="order-note">
+            Send drawings or photos after submission to
+            <a href="mailto:orders@terradekl.com">orders@terradekl.com</a>
+            with your full name in the subject line.
+          </p>
+        </section>
+
+        <section class="order-form-panel" aria-label="Custom lid request form">
+          <form
+            class="order-form"
+            action="mailto:orders@terradekl.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label>
+              Full Name
+              <input type="text" name="full-name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+
+            <label>
+              Terrarium Opening Size
+              <input
+                type="text"
+                name="size"
+                placeholder="Example: 45cm x 30cm"
+                required
+              />
+            </label>
+
+            <label>
+              Lid Type
+              <select name="lid-type" required>
+                <option value="">Select one</option>
+                <option>Full Lid</option>
+                <option>Split Lid</option>
+                <option>Sliding Lid</option>
+              </select>
+            </label>
+
+            <label>
+              Material Preference
+              <select name="material" required>
+                <option value="">Select one</option>
+                <option>Mesh</option>
+                <option>Acrylic</option>
+                <option>Glass</option>
+                <option>Mixed Build</option>
+              </select>
+            </label>
+
+            <label>
+              Quantity
+              <input type="number" name="quantity" min="1" value="1" required />
+            </label>
+
+            <label>
+              Notes
+              <textarea
+                name="notes"
+                rows="5"
+                placeholder="Vent placement, cable cutouts, frame details, and delivery target."
+              ></textarea>
+            </label>
+
+            <button class="button" type="submit">Send Order Request</button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
